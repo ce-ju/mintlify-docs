@@ -19,20 +19,9 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/system": {
       "get": {
-        "description": "Returns all plants from the system that the user has access to",
-        "parameters": [
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "The maximum number of results to return",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
+        "description": "Return System Informationen",
         "responses": {
           "200": {
             "description": "Plant response",
