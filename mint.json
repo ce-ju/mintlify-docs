@@ -13,6 +13,10 @@
     "anchors": {
       "from": "#0177fb",
       "to": "#053c54"
+    },
+    "background": {
+      "light": "#fff",
+      "dark": "#fff"
     }
   },
   "theme": "prism",
