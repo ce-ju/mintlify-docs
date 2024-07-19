@@ -7,12 +7,12 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0177fb",
-    "light": "#0177fb",
-    "dark": "#1269cc",
+    "primary": "#002434",
+    "light": "#002434",
+    "dark": "#03131a",
     "anchors": {
       "from": "#0177fb",
-      "to": "#1269cc"
+      "to": "#03131a"
     }
   },
   "theme": "prism",
