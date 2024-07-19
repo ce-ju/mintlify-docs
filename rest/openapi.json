@@ -181,6 +181,44 @@
           }
         }
       }
+    },
+    "/game/list": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Uptime"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game/{tag}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Uptime"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
