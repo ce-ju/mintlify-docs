@@ -24,9 +24,13 @@
     "default": "light",
     "isHidden": true
   },
+  "topbarLinks": {
+    "name": "Log In",
+    "url": "https://celltek.space/login"
+  },
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://celltek.space/customer"
+    "name": "Start for Free",
+    "url": "https://celltek.space/register"
   },
   "tabs": [
     {
