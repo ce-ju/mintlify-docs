@@ -121,7 +121,7 @@
   },
   "components": {
     "schemas": {
-      "Plant": {
+      "System": {
         "required": [
           "name"
         ],
@@ -175,9 +175,9 @@
       }
     },
     "securitySchemes": {
-      "bearerAuth": {
+      "basicAuth": {
         "type": "http",
-        "scheme": "bearer"
+        "scheme": "basic"
       }
     }
   }
