@@ -59,11 +59,16 @@
       ]
     },
     {
-      "group": "System",
+      "group": "REST-API",
       "pages": [
-        "rest/rest",
-        "rest/system",
-        "rest/uptime",
+        "rest/quickstart",
+        {
+          "group": "System",
+          "pages": [
+            "rest/system",
+            "rest/uptime"
+          ]
+        },
         {
           "group": "Account",
           "pages": [
