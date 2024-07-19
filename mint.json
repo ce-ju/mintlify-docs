@@ -110,7 +110,7 @@
         },
         "rest/ext",
         "rest/world",
-        "rest/git/repo",
+        "rest/git/repo"
       ]
     }
   ],
