@@ -15,7 +15,7 @@
   ],
   "security": [
     {
-      "basic": []
+      "Token": []
     }
   ],
   "paths": {
@@ -35,26 +35,17 @@
                 }
               }
             }
-          },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
           }
         }
       }
     },
     "/uptime": {
       "get": {
-        "description": "Return Uptime Informationen",
+        "security": [],
+        "description": "Return System Informationen",
         "responses": {
           "200": {
-            "description": "Uptime response",
+            "description": "System response",
             "content": {
               "application/json": {
                 "schema": {
@@ -62,49 +53,6 @@
                   "items": {
                     "$ref": "#/components/schemas/Uptime"
                   }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/plants/{id}": {
-      "delete": {
-        "description": "Deletes a single plant based on the ID supplied",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "ID of plant to delete",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "Plant deleted",
-            "content": {}
-          },
-          "400": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
                 }
               }
             }
@@ -116,54 +64,30 @@
   "components": {
     "schemas": {
       "System": {
-        "required": [],
-        "type": "object",
-      },
-      "Uptime": {
-        "required": [],
-        "type": "object",
-      },
-      "NewPlant": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/Plant"
-          },
-          {
-            "required": [
-              "id"
-            ],
-            "type": "object",
-            "properties": {
-              "id": {
-                "description": "Identification number of the plant",
-                "type": "integer",
-                "format": "int64"
-              }
-            }
-          }
-        ]
-      },
-      "Error": {
-        "required": [
-          "error",
-          "message"
-        ],
         "type": "object",
         "properties": {
-          "error": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "message": {
-            "type": "string"
+          "response": {
+            "type": "string",
+            "description": "response"
+          }
+        }
+      },
+      "Uptime": {
+        "type": "object",
+        "properties": {
+          "response": {
+            "type": "string",
+            "description": "response"
           }
         }
       }
     },
     "securitySchemes": {
-      "basicAuth": {
-        "type": "http",
-        "scheme": "basic"
+      "Token": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "Enter your API-KEY in the format **API-KEY &lt;api-key>**"
       }
     }
   }
