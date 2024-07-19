@@ -57,6 +57,25 @@
           }
         }
       }
+    },
+    "/account": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Account"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -71,6 +90,15 @@
         }
       },
       "Uptime": {
+        "type": "object",
+        "properties": {
+          "response": {
+            "type": "string",
+            "description": "response"
+          }
+        }
+      },
+      "Account": {
         "type": "object",
         "properties": {
           "response": {
