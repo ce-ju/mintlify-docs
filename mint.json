@@ -71,10 +71,29 @@
             "rest/allowlist/domain"
           ]
         },
-        "rest/blocklist/domains",
-        "rest/blocklist/phones",
-        "rest/blocklist/word",
-        "rest/game",
+        {
+          "group": "Blocklist",
+          "pages": [
+            "rest/blocklist/domains",
+            "rest/blocklist/phones",
+            "rest/blocklist/words"
+          ]
+        },
+        {
+          "group": "Games",
+          "pages": [
+            "rest/game",
+            "rest/game/list",
+            "rest/game/id",
+            "rest/game/files",
+            "rest/game/addons",
+            "rest/game/addon",
+            "rest/game/mods",
+            "rest/game/mod",
+            "rest/game/import/tekbase",
+            "rest/game/query"
+          ]
+        },
         "rest/ext",
         "rest/world",
         "rest/git/repo",
