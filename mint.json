@@ -16,6 +16,10 @@
     }
   },
   "theme": "prism",
+  "modeToggle": {
+    "default": "light",
+    "isHidden": true
+  },
   "topbarCtaButton": {
     "name": "Dashboard",
     "url": "https://celltek.space/customer"
