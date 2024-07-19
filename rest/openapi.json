@@ -21,7 +21,7 @@
   "paths": {
     "/system": {
       "get": {
-        "description": "Return System Informationen",
+        "security": [],
         "responses": {
           "200": {
             "description": "System response",
@@ -42,7 +42,6 @@
     "/uptime": {
       "get": {
         "security": [],
-        "description": "Return System Informationen",
         "responses": {
           "200": {
             "description": "System response",
