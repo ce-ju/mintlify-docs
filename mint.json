@@ -9,10 +9,10 @@
   "colors": {
     "primary": "#002434",
     "light": "#002434",
-    "dark": "#03131a",
+    "dark": "#053c54",
     "anchors": {
       "from": "#0177fb",
-      "to": "#03131a"
+      "to": "#053c54"
     }
   },
   "theme": "prism",
