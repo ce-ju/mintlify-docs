@@ -118,12 +118,10 @@
       "System": {
         "required": [],
         "type": "object",
-        "properties": {}
       },
       "Uptime": {
         "required": [],
         "type": "object",
-        "properties": {}
       },
       "NewPlant": {
         "allOf": [
