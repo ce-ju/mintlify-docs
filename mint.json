@@ -26,13 +26,6 @@
       "url": "api-reference"
     }
   ],
-  "topbarLinks": [
-    {
-      "name": "Join Discord",
-      "icon": "discord",
-      "url": "https://celltek.de/discord"
-    }
-  ],
   "navigation": [
     {
       "group": "Introduction",
