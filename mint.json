@@ -61,7 +61,7 @@
     {
       "group": "REST-API",
       "pages": [
-        "rest/quickstart",
+        "rest/api",
         {
           "group": "System",
           "pages": [
