@@ -76,6 +76,44 @@
           }
         }
       }
+    },
+   "/allowlist/ip": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AllowlistIP"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/allowlist/domain": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AllowlistIP"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -99,6 +137,24 @@
         }
       },
       "Account": {
+        "type": "object",
+        "properties": {
+          "response": {
+            "type": "string",
+            "description": "response"
+          }
+        }
+      },
+      "AllowlistIP": {
+        "type": "object",
+        "properties": {
+          "response": {
+            "type": "string",
+            "description": "response"
+          }
+        }
+      },
+      "AllowlistDomain": {
         "type": "object",
         "properties": {
           "response": {
