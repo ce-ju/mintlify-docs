@@ -61,7 +61,7 @@
     {
       "group": "System",
       "pages": [
-        "rest/quickstart",
+        "rest/rest",
         "rest/system",
         "rest/uptime",
         {
@@ -100,12 +100,17 @@
             "rest/game/query"
           ]
         },
+        {
+          "group": "Requests",
+          "pages": [
+            "rest/req/ip",
+            "rest/req/steam",
+            "rest/req/sslscan"
+          ]
+        },
         "rest/ext",
         "rest/world",
         "rest/git/repo",
-        "rest/req/ip",
-        "rest/req/sslscan",
-        "rest/req/steam"
       ]
     }
   ],
