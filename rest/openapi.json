@@ -41,7 +41,12 @@
     },
     "/uptime": {
       "get": {
-        "security": [],
+        "security": [
+          {},
+          {
+            "Token": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "System response",
