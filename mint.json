@@ -64,7 +64,13 @@
         "rest/system",
         "rest/uptime",
         "rest/account",
-        "rest/allowlist/ip",
+        {
+          "group": "Allowlist",
+          "pages": [
+            "rest/allowlist/ip",
+            "rest/allowlist/dommain"
+          ]
+        },
         "rest/blocklist/domains",
         "rest/blocklist/phones",
         "rest/blocklist/word",
