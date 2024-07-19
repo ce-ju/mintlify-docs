@@ -59,11 +59,16 @@
       ]
     },
     {
-      "group": "API-Documentation",
+      "group": "System",
       "pages": [
         "rest/system",
         "rest/uptime",
-        "rest/account",
+        {
+          "group": "Account",
+          "pages": [
+            "rest/account"
+          ]
+        },
         {
           "group": "Allowlist",
           "pages": [
