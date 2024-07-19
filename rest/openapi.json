@@ -124,6 +124,63 @@
           }
         }
       }
+    },
+    "/blocklist/domains": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Uptime"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/blocklist/phones": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Uptime"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/blocklist/words": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "System response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Uptime"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
