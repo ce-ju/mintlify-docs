@@ -68,7 +68,7 @@
           "group": "Allowlist",
           "pages": [
             "rest/allowlist/ip",
-            "rest/allowlist/dommain"
+            "rest/allowlist/domain"
           ]
         },
         "rest/blocklist/domains",
