@@ -59,9 +59,22 @@
       ]
     },
     {
-      "group": "REST API",
+      "group": "API-Documentation",
       "pages": [
-        "rest/system"
+        "rest/system",
+        "rest/uptime",
+        "rest/account",
+        "rest/allowlist/ip",
+        "rest/blocklist/domains",
+        "rest/blocklist/phones",
+        "rest/blocklist/word",
+        "rest/game",
+        "rest/ext",
+        "rest/world",
+        "rest/git/repo",
+        "rest/req/ip",
+        "rest/req/sslscan",
+        "rest/req/steam"
       ]
     }
   ],
