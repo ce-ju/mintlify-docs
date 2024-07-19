@@ -22,13 +22,17 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "REST-API",
+      "url": "rest"
+    },
+    {
+      "name": "SDKs",
+      "url": "sdks"
     },
     {
       "name": "Troubleshooting",
       "url": "troubleshooting"
-    },
+    }
   ],
   "navigation": [
     {
