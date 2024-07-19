@@ -41,12 +41,6 @@
     },
     "/uptime": {
       "get": {
-        "security": [
-          {},
-          {
-            "Token": []
-          }
-        ],
         "responses": {
           "200": {
             "description": "System response",
@@ -91,7 +85,7 @@
         "type": "apiKey",
         "in": "header",
         "name": "Authorization",
-        "description": "Enter your API-KEY in the format **API-KEY &lt;api-key>**"
+        "description": "Enter your API-KEY in the format **&lt;api-key>**"
       }
     }
   }
