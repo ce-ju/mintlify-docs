@@ -47,33 +47,27 @@
             }
           }
         }
-      },
-      "post": {
-        "description": "Creates a new plant in the store",
-        "requestBody": {
-          "description": "Plant to add to the store",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewPlant"
-              }
-            }
-          },
-          "required": true
-        },
+      }
+    },
+    "/uptime": {
+      "get": {
+        "description": "Return Uptime Informationen",
         "responses": {
           "200": {
-            "description": "plant response",
+            "description": "Uptime response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plant"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Uptime"
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "unexpected error",
+            "description": "Unexpected error",
             "content": {
               "application/json": {
                 "schema": {
@@ -122,20 +116,14 @@
   "components": {
     "schemas": {
       "System": {
-        "required": [
-          "name"
-        ],
+        "required": [],
         "type": "object",
-        "properties": {
-          "name": {
-            "description": "The name of the plant",
-            "type": "string"
-          },
-          "tag": {
-            "description": "Tag to specify the type",
-            "type": "string"
-          }
-        }
+        "properties": {}
+      },
+      "Uptime": {
+        "required": [],
+        "type": "object",
+        "properties": {}
       },
       "NewPlant": {
         "allOf": [
