@@ -79,6 +79,7 @@
     },
    "/allowlist/ip": {
       "get": {
+        "security": "TokenIP",
         "responses": {
           "200": {
             "description": "System response",
@@ -98,6 +99,7 @@
     },
     "/allowlist/domain": {
       "get": {
+        "security": "TokenDomain",
         "responses": {
           "200": {
             "description": "System response",
@@ -106,7 +108,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/AllowlistIP"
+                    "$ref": "#/components/schemas/AllowlistDomain"
                   }
                 }
               }
@@ -170,6 +172,18 @@
         "in": "header",
         "name": "Authorization",
         "description": "Enter your API-KEY in the format **&lt;api-key>**"
+      },
+      "TokenIP": {
+        "type": "ip",
+        "in": "header",
+        "name": "Authorization",
+        "description": "Enter your IP-ADRESS in the format **&lt;ip>**"
+      },
+      "TokenDomain": {
+        "type": "domain",
+        "in": "header",
+        "name": "Authorization",
+        "description": "Enter your DOMAIN in the format **&lt;domain>**"
       }
     }
   }
