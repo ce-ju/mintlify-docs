@@ -24,7 +24,7 @@
         "description": "Return System Informationen",
         "responses": {
           "200": {
-            "description": "Plant response",
+            "description": "System response",
             "content": {
               "application/json": {
                 "schema": {
