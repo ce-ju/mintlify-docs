@@ -61,6 +61,7 @@
     {
       "group": "System",
       "pages": [
+        "rest/quickstart",
         "rest/system",
         "rest/uptime",
         {
